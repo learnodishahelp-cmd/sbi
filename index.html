@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>SBI Staff Association Golden Jubilee Registration</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="banner">
+    <h1>SBI Staff Association Golden Jubilee Celebration</h1>
+    <p>Barabati Indoor Stadium, Cuttack</p>
+    <p>Event Registration & Travel Details</p>
+  </header>
+
+  <main>
+    <section class="form-container">
+      <h2>Staff Registration</h2>
+      <form id="registrationForm">
+        <label>
+          Staff Name
+          <input type="text" name="staffName" required />
+        </label>
+
+        <label>
+          PF Number (unique)
+          <input type="text" name="pfNumber" required />
+        </label>
+
+        <label>
+          Branch Name
+          <input type="text" name="branch" />
+        </label>
+
+        <label>
+          Place of Boarding / Pickup Location
+          <input type="text" name="boardingPlace" required />
+        </label>
+
+        <label>
+          Mobile Number
+          <input type="tel" name="mobileNumber" required />
+        </label>
+
+        <label>
+          Number of persons travelling
+          <input type="number" name="numPersons" min="1" value="1" />
+        </label>
+
+        <label>
+          Vehicle requirement
+          <select name="vehicleRequired" required>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+          </select>
+        </label>
+
+        <label>
+          Any special remarks
+          <textarea name="remarks" rows="2"></textarea>
+        </label>
+
+        <button type="submit" class="primary-btn">Submit Registration</button>
+      </form>
+
+      <div id="message" class="message"></div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
